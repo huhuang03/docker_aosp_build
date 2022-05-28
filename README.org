@@ -1,0 +1,38 @@
+The Dockerfile in this directory sets up an Ubuntu Trusty image ready to build a variety of Android branches (>= Lollipop). It's particulary useful to build older branches that required 14.04 if you've upgraded to something newer.
+
+For now test
+
+docker build -t android-build-trusty .
+
+* Build image
+On linux
+#+begin_src shell
+  docker build 
+#+end_src
+
+On windows
+#+begin_src bash
+  ;;; use userid gorupid username as you like
+  export 
+#+end_src
+
+
+* Run image
+
+On linux
+#+begin_src shell
+  docker run -it --rm -v $ANDROID_BUILD_TOP:/src android-build-trusly
+#+end_src
+
+On windows
+#+begin_src bash
+  docker run -it --rm -v $env:ANDROID_BUILD_TOP_DOCKER:/src android-build-trusty
+#+end_src
+
+
+* Links
+https://cs.android.com/android/platform/superproject/+/master:build/make/tools/docker/README.md?hl=zh-cn
+
+
+adduser USERNAME
+usermod -aG sudo USERNAME
