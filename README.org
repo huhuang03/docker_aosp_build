@@ -22,6 +22,7 @@ docker run -it --rm -v $ANDROID_BUILD_TOP:/src android-build-trusly
 On windows
 #+begin_src bash
 docker run -it --rm -v /S/aosp/:/src android-build-trusty
+docker run -it --rm -v ${PWD}:/src android-build-trusty
 #+end_src
 
 
@@ -29,5 +30,5 @@ docker run -it --rm -v /S/aosp/:/src android-build-trusty
 https://cs.android.com/android/platform/superproject/+/master:build/make/tools/docker/README.md?hl=zh-cn
 
 
-adduser USERNAME
-usermod -aG sudo USERNAME
+adduser th
+adduser th sudo
