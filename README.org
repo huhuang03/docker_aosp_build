@@ -33,5 +33,3 @@ https://cs.android.com/android/platform/superproject/+/master:build/make/tools/d
 
 adduser th
 adduser th sudo
-
-
