@@ -1,3 +1,4 @@
+#!/usr/bin/perl
 $ip = `ifconfig |grep -E '192|172'`;
 
 $ip =~ /(192[^ ]*)/;
@@ -7,10 +8,10 @@ print "$1\n";
 # @ means a array
 @files = glob("*");
 
-foreach my $file (@files) {
-    open(IN, $file) or die $!;
-    while (<IN>) {
-	print "$_";
-    }
-    close(IN);
-}
+# foreach my $file (@files) {
+#     open(IN, $file) or die $!;
+#     while (<IN>) {
+# 	print "$_";
+#     }
+#     close(IN);
+# }
