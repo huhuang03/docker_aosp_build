@@ -1,5 +1,5 @@
 build_mac:
-	docker build --build-arg userid=`id -u` --build-arg groupid=`id -g` --build-arg username=`id -un` -t android-build-trusty .
+	docker build --build-arg userid=`id -u` --build-arg groupid=`id -g` --build-arg username=root -t android-build-trusty .
 
 build_linux:
 	docker build --build-arg userid=$(id -u) --build-arg groupid=$(id -g) --build-arg username=$(id -un) -t android-build-trusty .

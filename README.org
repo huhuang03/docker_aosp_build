@@ -27,9 +27,6 @@ docker run -it --rm -v ${PWD}:/src android-build-trusty
 
 
 * Links
-https://cs.android.com/android/platform/superproject/+/master:build/make/tools/docker/README.md?hl=zh-cn
-[[https://gerrit.googlesource.com/git-repo/+/master/docs/internal-fs-layout.md][repo internal fs layout]]
-
-
-adduser th
-adduser th sudo
+- [[https://source.android.com/setup/build/building][aosp home]]
+- [[https://cs.android.com/android/platform/superproject/+/master:build/make/tools/docker/README.md?hl=zh-cn][docker 14.04]]
+- [[https://gerrit.googlesource.com/git-repo/+/master/docs/internal-fs-layout.md][repo internal fs layout]]
